@@ -1,0 +1,43 @@
+Hello, and welcome to my CAF-ICS device tree for the skyrocket. The following steps should be used if you wish
+to compile CAF-ICS from source.
+
+1) Initialize a build enviornment.
+
+I followed the instructions linked here -----> http://source.android.com/source/initializing.html Note: For Ubnutu users trying to compile that do not have java installed on their computer, I would recommend intstalling java by using this link -------> http://www.bogdanovic.se/installing-oracle-sun-jdk-6-on-ubuntu as this is the only method that worked for me.
+
+
+
+2) Download the source.
+
+To download the CAF-ICS source, simply enter the following commands into terminal.
+
+  A) mkdir ~/CAF-ICS
+
+  B) cd ~/CAF-ICS
+
+  C) repo init -u git://codeaurora.org/platform/manifest.git -b ics -m M8260AAABQNLZA30120.xml --repo-url=git://codeaurora.org/tools/repo.git
+
+  D) repo sync -j8 (use a lower -jx number if your connection is slow)
+
+  E) Go get a sandwich. Seriously, this will take awhile to check out.
+
+
+
+3) Set up the device tree using these commands.
+
+  A) rm -rf device/qcom/msm8660_surf
+
+  B) git clone git://github.com/jomeister15/msm8660_surf-ics_device_tree device/qcom/msm8660_surf
+
+
+4) Start the build using these commands.
+
+  A) source build/envsetup.sh
+
+  B) choosecombo 1 2 msm8660_surf eng
+
+  C) make -j4 KERNEL_DEFCONFIG=msm8660_defconfig
+
+
+
+I will add more instructions as to how to build with QC_PROP=true, etc as soon as I can make more necessary changes to the device tree.
