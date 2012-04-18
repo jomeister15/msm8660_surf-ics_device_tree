@@ -2,7 +2,7 @@ Hello, and welcome to my CAF-ICS device tree for the skyrocket. The following st
 
 1) Initialize a build enviornment.
 
-I followed the instructions linked here -----> http://source.android.com/source/initializing.html Note: For Ubnutu users trying to compile that do not have java installed on their computer, I would recommend intstalling java by using this link -------> http://www.bogdanovic.se/installing-oracle-sun-jdk-6-on-ubuntu as this is the only method that worked for me.
+I followed the instructions linked here -----> http://source.android.com/source/initializing.html Note: For Ubnutu users trying to compile that do not have java installed on their computer, I would recommend intstalling java by using this link -------> http://www.bogdanovic.se/installing-oracle-sun-jdk-6-on-ubuntu
 
 
 
