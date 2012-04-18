@@ -1,5 +1,4 @@
-Hello, and welcome to my CAF-ICS device tree for the skyrocket. The following steps should be used if you wish
-to compile CAF-ICS from source.
+Hello, and welcome to my CAF-ICS device tree for the skyrocket. The following steps should be used to compile CAF-ICS from source.
 
 1) Initialize a build enviornment.
 
@@ -17,7 +16,7 @@ To download the CAF-ICS source, simply enter the following commands into termina
 
   C) repo init -u git://codeaurora.org/platform/manifest.git -b ics -m M8260AAABQNLZA30120.xml --repo-url=git://codeaurora.org/tools/repo.git
 
-  D) repo sync -j8 (use a lower -jx number if your connection is slow)
+  D) repo sync -j4 (use a lower -jx number if your connection is slow)
 
   E) Go get a sandwich. Seriously, this will take awhile to check out.
 
